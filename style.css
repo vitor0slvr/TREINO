@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,11 +20,15 @@
   --title-font: 'Manrope', sans-serif;
 }
 
+/* reset ^ */
+
+.title, p{
+  color: var(--text-color);
+  text-decoration: none;
+}
 
 html{
-  width: 100%;
-  height: 100%;
-  background: #000000;
+  scroll-behavior: smooth;
 }
 
 header{
@@ -31,53 +36,89 @@ header{
   justify-content: center;
   display: flex;
   margin-top: 50px;
-  width: 1420px;
-  gap: 5rem;
+  width: 116rem;
+  gap: 3rem;
   font: 400 1rem var(--title-font);
 }
 
-.container{
-  margin-left: 3rem;
-  margin-right: 3rem;
+/* header ^ */
+
+body{
+  background: var(--backgrond);
 }
 
-.title, p{
-  color: white;
-  text-decoration: none;
-}
-
-
-button {
+#button {
   position: absolute;
   margin-top: -2rem;
   background-color: rgb(0, 0, 0);
-  border: 1px solid #8257E5;
+  border: 1px solid var(--button);
   border-radius: 0.25rem;
   cursor: pointer;
-  margin-left: 80rem;
+  margin-left: 90rem;
 }
 
-button p {
+#button p {
   margin-top: 11px;
   margin-bottom: 11px;
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
-/* header button p {
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-} */
 
 
 #logo-desktop {
   margin-top: 20px;
   position: absolute;
-  width: 60.06px;
+  width: 60px;
   height: 50px;
-  left: 140px;
+  left: 280px;
   top: 24px;
   cursor: pointer;
+}
+
+/* button and logo */
+
+h1 {
+  color: var(--text-color);
+  font: 700 80.5px var(--title-font);
+  margin-top: 45px;
+  margin-left: 680px;
+}
+
+h2 {
+  color: #000;
+  font: 700 82px var(--title-font);
+  margin-top: -15px;
+  margin-left: 635px;
+  text-shadow: 1px -1px 0px var(--button), 
+  -1px 1px 0px var(--button),                    
+   1px -1px 0px var(--button),                  
+   1px 0px 0px var(--button);
+
+}
+ 
+/* h1 e h2  */
+
+#bola-direita{
+  position: absolute;
+  width: 750px;
+  height: 610px;
+  left: 1127px;
+  top: -63px;
+}
+
+#bola-esquerda{
+  position: absolute;
+  margin-top: -40px;
+  width: 1000px;
+  height: 686px;
+}
+
+/* blur balls */
+
+#copos {
+  position: absolute;
+  width: 1033px;
+  height: 590px;
+  left: 407px;
+  top: 380px;
 }
